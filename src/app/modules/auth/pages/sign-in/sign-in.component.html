@@ -1,0 +1,93 @@
+<!-- login form -->
+<form
+  class="my-10 space-y-6"
+  *ngIf="!isLoggedIn"
+  name="form"
+  (ngSubmit)="f.form.valid && onSubmit()"
+  #f="ngForm"
+  novalidate
+>
+  <div class="text-center">
+    <svg-icon src="assets/images/webconnect__logo_white.svg"> </svg-icon>
+  </div>
+
+  <div class="text-center">
+    <p class="text-white">LOGIN</p>
+    <span class="text-white">wbc-frontend</span>
+  </div>
+
+  <div class="space-y-3 text-left">
+    <div class="form__group">
+      <div class="relative">
+        <input
+          [ngClass]="{ 'is__invalid-input': submitted && username.errors }"
+          class="peer block"
+          placeholder=" "
+          placeholder="Username"
+          type="text"
+          name="username"
+          [(ngModel)]="form.username"
+          required
+          #username="ngModel"
+        />
+        <label
+          for="email"
+          class="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-95 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-95 peer-focus:px-2 peer-focus:text-primary-500 dark:bg-night-700 dark:text-night-200">
+          Username
+        </label>
+      </div>
+      <div *ngIf="submitted && username.errors" class="is__invalid-error">
+        <div *ngIf="username.errors['required']">Required field</div>
+      </div>
+    </div>
+
+    <div class="form__group">
+      <div class="relative">
+        <input
+          type="password"
+          class="peer block"
+          placeholder="Password"
+          name="password"
+          [(ngModel)]="form.password"
+          required
+          minlength="6"
+          #password="ngModel"
+          [ngClass]="{ 'is__invalid-input': submitted && password.errors }"
+        />
+        <label
+          for="password"
+          class="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-95 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-95 peer-focus:px-2 peer-focus:text-primary-600 dark:bg-night-700 dark:text-night-200">
+          Password
+        </label>
+      </div>
+      <div *ngIf="submitted && password.errors" class="is__invalid-error">
+        <div *ngIf="password.errors['required']">Required field</div>
+        <div *ngIf="password.errors['minlength']">Password must be at least 6 characters</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex items-center justify-between space-x-3">
+    <div class="flex items-center">
+      <input id="remember-me" name="remember-me" type="checkbox" />
+      <label for="remember-me" class="ml-2 block text-sm text-white"> Remember me </label>
+    </div>
+  </div>
+
+  <!-- Submit Button -->
+  <button
+    type="submit"
+    class="loginBtn group relative mb-10 flex w-full justify-center rounded-md border border-transparent py-2 px-4 text-sm font-medium text-white focus:outline-none focus:ring-2">
+    Login
+  </button>
+  <div *ngIf="submitted && isLoginFailed" class="is__invalid-error">
+    {{ errorMessage }}
+  </div>
+
+  <div class="text-center">
+    <a routerLink="/auth/forgot-password" class="font-medium text-white">
+      Forgot password?
+    </a>
+  </div>
+
+</form>

@@ -1,0 +1,14 @@
+<svg id="warning" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="copy-blue">
+    <rect id="Boundary" width="24" height="24" fill="none"/>
+  </g>
+  <g id="Grupo_885" data-name="Grupo 885" transform="translate(-538.377 -70)">
+    <path id="Trazado_245" data-name="Trazado 245" d="M79.957,101.946a3.631,3.631,0,0,1,1.392-.746,8.873,8.873,0,0,0-10.286,1.634.621.621,0,0,0,.879.879,7.634,7.634,0,0,1,8.016-1.766" transform="translate(473.05 -21.272)" fill="#fff"/>
+    <path id="Trazado_246" data-name="Trazado 246" d="M15.762,4.286a.621.621,0,0,0,.879-.879,11.638,11.638,0,0,0-16.459,0,.621.621,0,0,0,.879.879,10.4,10.4,0,0,1,14.7,0" transform="translate(541.966 76.189)" fill="#fff"/>
+    <path id="Trazado_247" data-name="Trazado 247" d="M147.614,201.919a3.618,3.618,0,0,1,.295-1.209,6.108,6.108,0,0,0-1.667-.23,6.04,6.04,0,0,0-4.3,1.781.621.621,0,1,0,.879.879,4.806,4.806,0,0,1,3.421-1.417,4.858,4.858,0,0,1,1.372.2" transform="translate(404.135 -118.734)" fill="#fff"/>
+    <path id="Trazado_248" data-name="Trazado 248" d="M250.528,310.505a1.507,1.507,0,1,0,1.507,1.508,1.507,1.507,0,0,0-1.507-1.508" transform="translate(299.848 -225.708)" fill="#fff"/>
+    <path id="Trazado_249" data-name="Trazado 249" d="M380.232,154.679a3.041,3.041,0,1,1-3.041-3.041,3.041,3.041,0,0,1,3.041,3.041" transform="translate(178.189 -71.246)" fill="#f9d91e"/>
+    <path id="Trazado_250" data-name="Trazado 250" d="M468.441,182.557a.437.437,0,0,0,.423-.439V179.85a.439.439,0,0,0-.878,0v2.268a.466.466,0,0,0,.455.439" transform="translate(86.954 -98.249)"/>
+    <path id="Trazado_251" data-name="Trazado 251" d="M463.8,302.023a.571.571,0,1,0,.571.571.572.572,0,0,0-.571-.571" transform="translate(91.579 -217.461)"/>
+  </g>
+</svg>
